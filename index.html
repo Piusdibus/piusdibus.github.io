@@ -1,8 +1,255 @@
 <!DOCTYPE html>
 <html>
+<title>Christoph Niederhauser v/o Pius</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url(./resources/images/Hintergrund_1.png);
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url(./resources/images/Hintergrund_2.png);
+  min-height: 600px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url(./resources/images/Hintergrund_3.png);
+  min-height: 600px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<p>Junge was los?!</p>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-home"></i> HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ÜBER MICH</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-wrench"></i> WERKZEUGKISTE</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> KONTAKT</a>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ÜBER MICH</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">WERKZEUGKISTE</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">KONTAKT</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">CHRISTOPH 'PIUS' NIEDERHAUSER</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">SALETTI!</h3>
+  <p class="w3-center"><em>Ich? Über mich? Mit Vergnügen.</em></p>
+  <p>Ich bin Christoph - Vielen besser bekannt unter meinem Pfadinamen, Pius. Ich bin Landschaftsgärtner und hätte beinahe das Bachelorstudium zum Umweltingenieur erfolgreich abgeschlossen. 
+    Ich habe ein super duper ultrabreites Interesse an allem, was es so zu entdecken gibt. In dieser Welt! Zu dieser Zeit! Ich wurde schon mit 3 Jahren als "Blüemeler" bezeichnet bin bis heute 
+    fasziniert von Pflanzen und ihrer Ökologie. Ich mache mit viel Elan ziemlich schlechte Fotos. Ich höre Musik aller Art und könnte ohne die schönen Künste kaum sein. Ich versuche, mich als 
+    Individuum in unserer Gesellschaft konstruktiv einzubringen. Ich verfolge gespannt das politische Geschehen - in der Schweiz und international. Ich trage oft Berg- oder Skischuhe. Ich bewege 
+    mich als Datenreisender mit Spass am Gerät in den faszinierenden Weiten des Netzes. Ich spreche Deutsch mit einem Schweizer Akzent, der noch stärker ist als mein morgendlicher Espresso. Ich 
+    verstehe Englisch gut genug, um mir Filme, Bücher, Zeitungsartikel und Podcasts ohne zu Zögern in Originalsprache zu Gemüte zu führen. Ich kann mich im Notfall mit Französisch durchschlagen 
+    und spreche genug Spanisch, um in den Ferien nicht immer das doppelte der lokalen Preise bezahlen zu müssen. Und nicht zuletzt bin ich einfach ein junger, rebellischer Geist, der versucht, 
+    sich in dieser verrückten weiten Welt zurechtzufinden.
+  </p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Christoph Niederhauser v/o Pius</b></p><br>
+      <img src="./resources/images/Portrait.png" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p><em><b>Yo Pius, wieso eine eigene Website?</b></em>  Naja, ich habe mich halt dafür interessiert, wie Websites gebaut werden. Kurz "HTML Website Beginner" bei Google eingetippt und zack, da ist jetzt 
+        meine eigene Website! Ganz abgesehen davon bin ich ein grosser Verfechter des Quick-and-Dirty-Ansatzes. Am Besten einfach ausprobieren, wenn du was lernen willst! Auch wenn es halt nicht 
+        so den hochprofessionellen Eindruck macht. Wenn ich herausfinde wie das funktioniert, dann baue ich in Zukunft vielleicht auch noch einen Blog an die Website. Ich würde manchmal ganz gerne 
+        meine Gedanken in Textform festhalten, oder sowas wie ein Lerntagebuch in Form eines Blogs führen. Mal schauen wo das hinführt.
+      
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">WERKZEUGKISTE</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">FREIE WERKZEUGE FÜR FREIE MENSCHEN</h3>
+  <p class="w3-center"><em>Ich möchte in Zukunft einige nützliche Services selber hosten, damit ich nicht immer auf Google & Co. zurückgreifen muss - Eine digitale Werkzeugkiste, sozusagen. 
+    Gerne werde ich diese Services auch meinen FreundInnen zur Verfügung stellen. Hier werden sich die Links finden.<br><strong>ACHTUNG</strong> Diese Dienste sind nur für Hobbyzwecke geeignet.
+  Brauchst du so etwas für wichtige oder sensitive Daten, dann wende dich an den Admin deines Vertrauens.</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <a href="" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-hourglass"></i> Etherpad</a>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-hourglass"></i> Jitsi Meet</a>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-hourglass"></i> Teamspeak</a>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-hourglass"></i> RocketChat</a>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <a href="" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-hourglass"></i> Wiki</a>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-hourglass"></i> LimeSurvey</a>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-hourglass"></i> Discourse</a>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-hourglass"></i> ???</a>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">KONTAKT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">*KLOPF KLOPF*</h3>
+  <p class="w3-center"><em>Lass mir eine Nachricht da oder komm einfach mal auf einen <i class="fa fa-coffee"></i> vorbei</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="./resources/images/Schatzkarte.png" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 3004 Bern, Schweiz (Adresse kurz per Email anfragen)<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Telefon: Kurz per Email anfragen<br>
+        <i class="fa fa-telegram fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Telegram: @Piusdibus<br>
+        <i class="fa fa-comments fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Jabber: ch.niederhauser@jabber.immerda.ch<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: ch.niederhauser[ätt]immerda.ch<br>
+      </div>
+      <p>Links zu Social Media unten <i class="fa fa-arrow-down"></i> in der Fusszeile</p>
+
+      
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Nach oben</a>
+  <div class="w3-xlarge w3-section">    
+    <a href="https://bandcamp.com/procrastinatingpete" title="Bandcamp" target="_blank"><i class="fa fa-bandcamp w3-hover-opacity"></i></a>
+    <a href="https://www.goodreads.com/user/show/63011168-christoph-niederhauser" title="Goodreads" target="_blank"><i class="fa fa-book w3-hover-opacity"></i></a>
+    <a href="https://www.inaturalist.org/people/piusdibus" title="iNaturalist" target="_blank"><i class="fa fa-tree w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/piusdibus" title="Twitter" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://instagram.com/piusdibus" title="Instagram" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://tooting.ch/web/accounts/108229" title="Mastodon" target="_blank"><i class="fa fa-square w3-hover-opacity"></i></a>
+    <a href="https://www.discogs.com/user/Piusdibus" title="Discogs" target="_blank"><i class="fa fa-music w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/niederhauserch/" title="LinkedIn" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+  <p>Diese Website habe ich mir mithilfe von <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a> gebastelt.</p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
 </body>
 </html>
