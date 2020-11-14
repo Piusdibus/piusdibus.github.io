@@ -3,11 +3,10 @@ author:
   name: Christoph Niederhauser v/o Pius
   email: ch.niederhauser@immerda.ch
 description: > # this means to ignore newlines until "show_excerpts:"
-  Saletti! Hier mein Blog, so als Internettagebuch für allerlei Zeugs. Keine Ahnung
-  ob ich hier jemals was interessantes reinschreibe.
-  Aber eben, der bewährte quick-and-dirty-Ansatz: Besser einfach mal ausprobieren
-  und schauen was dabei rauskommt. Du kannst den RSS-Feed abonnieren, falls du
-  ganz sicher nichts verpassen willst.
+  Wildes Sammelsurium an Gedanken, Inspirationen und Ideen zu Themen wie Feldbotanik, 
+  Musik, Garten und Umwelt. Der Blog ist als Fundgrube zum drin herumwühlen zu verstehen.
+  Mir geht's um den bewährten quick-and-dirty-Ansatz: Besser einfach mal ausprobieren
+  und schauen wie die Dinge funktionieren.
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
