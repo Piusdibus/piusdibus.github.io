@@ -4,9 +4,7 @@ author:
   email: ch.niederhauser@immerda.ch
 description: > # this means to ignore newlines until "show_excerpts:"
   Wildes Sammelsurium an Gedanken, Inspirationen und Ideen zu Themen wie Feldbotanik, 
-  Musik, Garten und Umwelt. Der Blog ist als Fundgrube zum drin herumwühlen zu verstehen.
-  Mir geht's um den bewährten quick-and-dirty-Ansatz: Besser einfach mal ausprobieren
-  und schauen wie die Dinge funktionieren.
+  Musik, Garten und Umwelt. Eine Fundgrube zum drin herumwühlen. Quick and dirty; Hauptsache ausprobieren.
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
